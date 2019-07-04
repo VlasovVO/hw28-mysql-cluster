@@ -21,7 +21,7 @@ Vagrant.configure(2) do |config|
       # docker-compose -f /home/vagrant/docker-compose.yml build
       cd /home/vagrant
       mv tmp.env .env
-      ls -l /home/vagrant
+      chmod +x mysql.sh mysqlsh.sh shell-entrypoint.sh
       docker-compose up
     SHELL
   end
